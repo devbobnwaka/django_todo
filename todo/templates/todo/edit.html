@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>TODO APP WITH DJANGO</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" class='input' name="todo" placeholder="add todo" value="{{todo.todo}}"/>
+        <button type="submit">Update</button>
+    </form>
+
+{% endblock content %}

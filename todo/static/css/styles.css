@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+.container{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 500px;
+    margin: auto auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: bisque;
+    box-shadow: 2px 2px 4px 2px white;
+}
+
+form{
+    margin: 20px 0 10px 0;
+}
+
+h3{
+    text-align: center;
+}
+
+ul {
+    list-style-type:circle;
+    margin-left: 20px;
+}
+
+li{
+    border-bottom: 1px solid grey;
+    margin-bottom: 4px;
+    padding: 2px 0 2px 0;
+}
+
+.todo_li{
+    display: inline-block;
+    width: 75%;
+}
+
+.input{
+    width : 80%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: goldenrod;
+    color: white;
+    padding: 5px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(228, 188, 86);
+}
+
+#del, #edit{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+
+#del{
+    background-color: crimson;
+}
+
+#edit{
+    background-color: blue
+}
+#del:hover, #edit:hover{
+    cursor: pointer;
+}

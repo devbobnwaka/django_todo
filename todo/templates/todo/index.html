@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>TODO APP WITH DJANGO</h3>
+    <form action="." class="post-form" method="POST">
+        {% csrf_token %}
+        <!-- <div>
+            <input type="text" name="todo" placeholder="add todo"/>
+        </div> -->
+        {{ form }}
+        <button type="submit">Add todo</button>
+    </form>
+    <ul>
+        {% for todo in todos reversed %}
+        <li><span class="todo_li">{{ todo.todo }} </span><a href="delete/{{todo.id}}" id="del">delete</a> <a href="edit/{{todo.id}}" id="edit">edit</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

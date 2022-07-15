@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    
+    <div class='container'>
+        <form action="/">
+            <input type="text" class="input" name='q' placeholder="search">
+            <button type="submit">Search</button>
+        </form>   
+        {% block content %}
+        <h3>This will be replaced</h3>
+        {% endblock content %}
+
+    </div>
+    
+</body>
+</html>
